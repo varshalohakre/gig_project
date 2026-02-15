@@ -1,0 +1,157 @@
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 1rem;
+}
+
+.underlined-i {
+  font-weight: bold;
+  position: relative;
+}
+
+.underlined-i::after {
+  content: '';
+  position: absolute;
+  width: 90%; /* Adjust the width if necessary */
+  height: 4px; /* Adjust the height (thickness) of the underline */
+  background-color: black; /* Color of the underline */
+  bottom: 3px; /* Position the underline */
+  left: 0;
+}
+
+.sign-out-user-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.useraccount {
+  font-size: 2rem;
+}
+
+.header-main a {
+  text-decoration: none;
+  /* Remove underline from anchor tag */
+  color: inherit;
+  /* Inherit text color from parent */
+}
+
+.header-main span {
+  display: inline-block;
+  /* Keep elements inline */
+}
+
+.gig-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.01em;
+  font-family: enriqueta, serif;
+  /* Set desired font */
+}
+
+.custom-btn {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  font-family: 'Lato', sans-serif;
+  border-radius: 10px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+}
+
+/* 1 */
+.btn-1 {
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+}
+
+.btn-white {
+  border: solid 2px #fff;
+  /* background: transparent; */
+  color: #fff;
+}
+
+.btn-white:hover {
+  border: solid 2px grey;
+  background: #fff;
+  color: #1f1f1f !important;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-out-user-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.popup-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  animation: fadeIn 0.3s;
+  z-index: 1000;
+}
+
+.popup-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.popup-item:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

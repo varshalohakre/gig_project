@@ -1,0 +1,119 @@
+.main-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    /* flex-direction: column; */
+}
+
+.main {
+    max-width: 1200px;
+    /* Adjust the max-width as per your requirement */
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-category-booknow{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.name-category{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.name{
+    font-weight: bolder;
+    color: black;
+    font-size: 1.2rem;
+}
+.description{
+    font-size: 1.1rem;
+    color: grey;
+    padding: 10px;
+    width: 70%;
+    text-align: left;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.expertise{
+    font-size: 1.1rem;
+    color: grey;
+    padding: 10px;
+    width: 70%;
+    text-align: left;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.category{
+    /* font-weight: 200; */
+    color: grey;
+    font-size: 1rem;
+    display: flex;
+    gap: 5px;
+}
+
+.pricing{
+    color: grey;
+    font-size: 1rem;
+    display: flex;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel{
+    width: 80%;
+}
+
+.book-now-btn{
+    padding: 10px;
+    background-color: black;
+    
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    /* border: none; */
+    border: 1px thin black;
+}
+
+.book-now-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.carousel-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black; /* Set background color */
+    color: white; /* Set arrow color */
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: #333; /* Change color on hover */
+  }
+  
+  .carousel-arrow.left {
+    left: 0rem;
+  }
+  
+  .carousel-arrow.right {
+    right: 0rem;
+  }  
+  

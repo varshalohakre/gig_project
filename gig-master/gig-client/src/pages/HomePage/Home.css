@@ -1,0 +1,44 @@
+.hero-section {
+  background: #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
+.hero-text {
+  width: 45%;
+  font-family: Arial,Helvetica,sans-serif;
+  max-width: 600px;
+  /* text-align: right; */
+}
+
+.who-are-we-section {
+  background-color: rgb(rgb(193, 177, 177), green, blue);
+  padding: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.who-are-we-section.fade-in {
+  opacity: 1;
+}
+
+.talent-artist-card {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.talent-artist-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}

@@ -76,12 +76,12 @@ function SignInForm() {
     }
 
     // Password validation with inline feedback and icon
-    if (!validatePassword(state.password)) {
-      setLoginError(
-        "Password must be at least 8 characters long and contain a mix of letters and numbers."
-      );
-      isValid = false;
-    }
+    // if (!validatePassword(state.password)) {
+    //   setLoginError(
+    //     "Password must be at least 8 characters long and contain a mix of letters and numbers."
+    //   );
+    //   isValid = false;
+    // }
     if (isValid) {
       try {
         await dispatch(loginAsync(state));

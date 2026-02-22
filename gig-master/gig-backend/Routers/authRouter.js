@@ -29,7 +29,7 @@ authRouter.post('/reset-password', resetPassword);
 //google login
 authRouter.post("/login/user", async (req, res) => {
   const client = new OAuth2Client(
-    "655936708831-6cv2t8h7v7gu3j7l0ibcsdg5dh59ikvb.apps.googleusercontent.com"
+    "797654701798-7j60q87m7iblfsschp2usrq8mo0722vk.apps.googleusercontent.com"
   );
   const { authId } = req.body;
   console.log(0);
@@ -37,7 +37,7 @@ authRouter.post("/login/user", async (req, res) => {
     const ticket = await client.verifyIdToken({
       idToken: authId,
       audience:
-        "655936708831-6cv2t8h7v7gu3j7l0ibcsdg5dh59ikvb.apps.googleusercontent.com",
+        "797654701798-7j60q87m7iblfsschp2usrq8mo0722vk.apps.googleusercontent.com",
     });
     console.log(1);
 

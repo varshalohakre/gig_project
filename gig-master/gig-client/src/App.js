@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <GoogleOAuthProvider clientId="655936708831-6cv2t8h7v7gu3j7l0ibcsdg5dh59ikvb.apps.googleusercontent.com">
+          <GoogleOAuthProvider clientId="797654701798-7j60q87m7iblfsschp2usrq8mo0722vk.apps.googleusercontent.com">
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Homepage />} />
